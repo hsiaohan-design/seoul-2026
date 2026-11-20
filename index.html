@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant" data-theme="picturebook">
 <head>
+<meta name="robots" content="noindex, nofollow, noarchive">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
@@ -446,7 +447,7 @@ const TRIP = {
     steps: [
       ["確認護照效期","三個人都要看，建議效期超過回國日 6 個月，小孩的護照最容易忘"],
       ["再確認 K-ETA 規定","免申請措施到 2026/12/31，出發前一週上 K-ETA 官網看最新公告"],
-      ["填 e-Arrival Card","出發前 3 天內（約 12/14 之後）上官網填，每人一份；住宿地址填 181 Donggyo-ro"],
+      ["填 e-Arrival Card","出發前 3 天內（約 12/14 之後）上官網填，每人一份；住宿地址照手機裡的地址卡截圖填"],
       ["裝 App 並登入","Uber、Kakao T、Naver Map、Papago、華航 App；Uber 先在台灣綁卡測試"],
       ["買 eSIM、換韓元","兩個大人各一組網路，走散才聯絡得到；市場小攤要現金"],
     ],
@@ -455,17 +456,17 @@ const TRIP = {
     links: [["K-ETA 官網","https://www.k-eta.go.kr/"],["e-Arrival Card 官網","https://www.e-arrivalcard.go.kr/"],["外交部領事事務局（韓國）","https://www.boca.gov.tw/"]],
   },
   flights: [
-    { dir:"去程", date:"12/17（四）", airline:"中華航空", no:"CI160", from:"TPE", fromCity:"桃園 T1", dep:"07:50", to:"ICN", toCity:"仁川 T2", arr:"11:20", dur:"約 2 小時 30 分", note:"建議 05:50 前到桃園第一航廈；抵達時間是韓國時間" },
-    { dir:"回程", date:"12/21（一）", airline:"中華航空", no:"CI161", from:"ICN", fromCity:"仁川 T2", dep:"12:30", to:"TPE", toCity:"桃園 T1", arr:"14:20", dur:"約 2 小時 50 分", note:"09:30 前到仁川第二航廈，要在機場退稅就多留 30 分鐘；14:20 是台灣時間" },
+    { dir:"去程", date:"12/17（四）", airline:"中華航空", no:"—", from:"TPE", fromCity:"桃園 T1", dep:"07:50", to:"ICN", toCity:"仁川 T2", arr:"11:20", dur:"約 2 小時 30 分", note:"建議 05:50 前到桃園第一航廈；抵達時間是韓國時間" },
+    { dir:"回程", date:"12/21（一）", airline:"中華航空", no:"—", from:"ICN", fromCity:"仁川 T2", dep:"12:30", to:"TPE", toCity:"桃園 T1", arr:"14:20", dur:"約 2 小時 50 分", note:"09:30 前到仁川第二航廈，要在機場退稅就多留 30 分鐘；14:20 是台灣時間" },
   ],
   cats: [["sight","📍 景點"],["food","🍜 用餐"],["shop","🛍️ 購物"],["move","🚃 交通"],["stay","🛏️ 住宿"]],
   days: [
     { date:"2026-12-17", label:"抵達弘大", title:"Day 1・飛進冬天的首爾", route:"桃園 → 仁川 T2 → 弘大", move:"AREX 一般列車直達弘大入口，約 55 分", stay:"弘大住宿",
       items:[
-        { k:"d1a", time:"07:50", cat:"move", title:"桃園機場起飛", desc:"華航 CI160，機上有餐，小朋友可以先補眠", tags:["flight"] },
+        { k:"d1a", time:"07:50", cat:"move", title:"桃園機場起飛", desc:"華航早班機，機上有餐，小朋友可以先補眠", tags:["flight"] },
         { k:"d1b", time:"11:20", cat:"move", title:"抵達仁川 T2", desc:"入境、領行李，順便開通 eSIM、買 T-money 卡（小朋友要買兒童卡）", tags:["walk"] },
         { k:"d1c", time:"12:30", cat:"move", title:"AREX 一般列車到弘大入口", desc:"搭「一般列車」才會停弘大入口（直達列車不停），約 55 分；行李太多可以改叫大型車", tags:["train"], map:"Incheon Airport Terminal 2 AREX" },
-        { k:"d1d", time:"13:45", cat:"stay", title:"到住宿放行李", desc:"弘大入口站 1 號出口，步行約 3–7 分鐘", tags:["walk"], map:"181 Donggyo-ro, Mapo-gu, Seoul" },
+        { k:"d1d", time:"13:45", cat:"stay", title:"到住宿放行李", desc:"弘大入口站 1 號出口，步行約 3–7 分鐘", tags:["walk"], map:"홍대입구역 1번 출구" },
         { k:"d1e", time:"14:30", cat:"food", title:"午餐＋午睡", desc:"早班機起得早，下午先讓小朋友睡一下，晚上才有體力", tags:["walk"] },
         { k:"d1f", time:"18:00", cat:"food", title:"👫 和朋友會合：弘大美食", desc:"豬腳、烤肉、燒啤吃起來！朋友口袋名單：起司奶油炸雞、詹姆士起司豬排、興夫家部隊鍋、百年百歲蔘雞湯、元堂馬鈴薯排骨湯、細爆炒年糕", tags:["walk"], must:true, map:"Hongdae food street Seoul" },
       ], tip:"朋友 12/16 就從高雄飛金浦，白天在玩江華 LUGE 和樂天世界，晚上再一起吃飯就好，不用趕。" },
@@ -524,7 +525,7 @@ const TRIP = {
         { k:"d5a", time:"07:30", cat:"stay", title:"退房、和朋友道別", desc:"朋友搭 10:50 金浦的班機，8:30 出門", tags:["walk"] },
         { k:"d5b", time:"08:00", cat:"move", title:"AREX 一般列車到仁川 T2", desc:"週一早上路上會塞車，搭機場鐵路最準時", tags:["train"], map:"Hongik University Station AREX" },
         { k:"d5c", time:"09:30", cat:"shop", title:"仁川 T2 報到、退稅", desc:"先辦登機，再去退稅、領免稅品", tags:["walk"], map:"Incheon Airport Terminal 2" },
-        { k:"d5d", time:"12:30", cat:"move", title:"起飛回台灣", desc:"華航 CI161，台灣時間 14:20 抵達桃園", tags:["flight"] },
+        { k:"d5d", time:"12:30", cat:"move", title:"起飛回台灣", desc:"台灣時間 14:20 抵達桃園", tags:["flight"] },
       ], tip:"今天不排任何行程。肉製品、新鮮蔬果不能帶回台灣，罰款很重。" },
   ],
   todo: [
@@ -545,12 +546,12 @@ const TRIP = {
   essentials: {
     title: "必備資訊",
     addr: {
-      label: "民宿地址 · 給計程車司機看",
-      ko: "서울특별시 마포구 동교로 181 (1~2층)",
-      ko2: "지번 주소 : 서울 마포구 동교동 201-28",
-      en: "181 Donggyo-ro (1~2F), Mapo-gu, Seoul",
-      note: "門口是黃色牆面＋白色 Luda 字樣，巷子裡找門牌不如認招牌快。弘大入口站 1 號出口步行 3–7 分鐘。地址由羅馬拼音與街景推回，出發前請跟房東再核對一次。",
-      map: "서울 마포구 동교로 181",
+      label: "民宿位置 · 給計程車司機看",
+      ko: "홍대입구역 1번 출구",
+      ko2: "마포구 동교동 (홍대)",
+      en: "Hongik Univ. Stn. Exit 1, Mapo-gu, Seoul",
+      note: "完整門牌不放網路。出發前把「民宿地址卡」圖片存進手機相簿＋設成最愛，給司機看圖片最快。門口是黃色牆面＋白色 Luda 字樣。",
+      map: "홍대입구역 1번 출구",
     },
     tels: [
       ["119", "火警・救護車", "韓國境內直撥"],
@@ -569,14 +570,13 @@ const TRIP = {
     ],
     links: [
       ["💱 今日匯率・換錢所比價", "https://creatrip.com/exchange"],
-      ["🏠 民宿 Airbnb 房源頁", "https://www.airbnb.com.tw/rooms/38203223"],
       ["⛷ 12/20 滑雪行程（AsiaYo）", "https://asiayo.com/zh-tw/activity/125228/"],
       ["💉 id 皮膚科 術後注意事項", "https://www.idclinic.co.kr/zh-tw/hd/about/precautions"],
     ],
-    note: "這些連結都要網路。民宿地址、訂單 QR、保單請另外存成手機截圖——地鐵站裡和山上收訊都不好。",
+    note: "這些連結都要網路。民宿地址卡、航班資訊、訂單 QR、保單請存成手機截圖——地鐵站裡和山上收訊都不好。",
   },
   stays: [
-    { name:"弘大住宿（和朋友同住）", nights:"12/17–12/21（4 晚）", address:"181 Donggyo-ro 1、2 樓，首爾麻浦區東橋洞", checkin:"待確認", checkout:"待確認", map:"서울 마포구 동교로 181", note:"弘大入口站 1 號出口步行約 3–7 分鐘；AREX 一般列車直達弘大入口站" },
+    { name:"弘大住宿（和朋友同住）", nights:"12/17–12/21（4 晚）", address:"弘大入口站 1 號出口步行 3–7 分鐘（完整地址見手機地址卡）", checkin:"待確認", checkout:"待確認", map:"홍대입구역 1번 출구", note:"弘大入口站 1 號出口步行約 3–7 分鐘；AREX 一般列車直達弘大入口站" },
   ],
   credit: { text:"用 trip-guide skill 製作", url:"https://github.com/Joanne9N/trip-guide-skill" },
 };
